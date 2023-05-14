@@ -20,7 +20,7 @@ public abstract class Futbolista implements Comparable<Futbolista> {
 	}
 	
 	public boolean equals(Futbolista f) {
-		if (this.compareTo(f) == 0) {
+		if (f == this) {
 			return true;
 		}
 		else {
