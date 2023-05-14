@@ -30,6 +30,8 @@ public abstract class Futbolista implements Comparable<Futbolista> {
 	
 	public abstract boolean jugarConLasManos();
 	
+	public abstract int compareTo(Futbolista o);
+	
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
