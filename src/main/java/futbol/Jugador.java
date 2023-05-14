@@ -20,12 +20,12 @@ public class Jugador extends Futbolista {
 		return super.toString() + " con el dorsal " + this.dorsal + ". Ha marcado " + this.golesMarcados;
 	}
 
-	public int compareTo(Futbolista o) {
-		if (this.getEdad() <= o.getEdad()) {
-			return o.getEdad() - this.getEdad();
+	public int compareTo(Object o) {
+		if (this.getEdad() <= ((Futbolista) o).getEdad()) {
+			return ((Futbolista) o).getEdad() - this.getEdad();
 		}
 		else {
-			return this.getEdad() - o.getEdad();
+			return this.getEdad() - ((Futbolista) o).getEdad();
 		}
 	}
 
